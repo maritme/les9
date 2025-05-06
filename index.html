@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Tandartspraktijk Kieskeurig</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Tandartsafspraak</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus quam vel justo auctor sollicitudin.
+             Pellentesque non sem eu tellus porttitor hendrerit in sit amet massa. Aliquam ut varius dui, vitae semper risus. 
+             Fusce vel condimentum tortor. Integer vestibulum, justo quis tempor vestibulum, turpis massa rhoncus dolor,
+              placerat sagittis nunc nunc ut ipsum. Ut maximus lacus non nisi dapibus, et finibus lectus venenatis. Donec nec
+               erat ut est varius ultrices. Nullam sit amet maximus diam, nec viverra nisl. Aenean nec lectus urna. Morbi 
+               commodo nisi leo, sit amet condimentum ipsum convallis id. Suspendisse potenti. Nunc posuere id diam nec luctus. 
+               Nullam varius nisl est, vel sagittis risus dignissim et. </p><br>
+        <img src="Tandartsstoel.jpg" alt="foto van een grijze tandartsstoel" width="300">
+        <img src="instrumenten.webp" alt="foto van verschillende tandartsintrumenten" width="300">
+        <img src="patiente.jpeg" alt="foto van vrouwelijke patient die behandeld wordt" width="300">
+        <br><br>
+        <form action="https://formspree.io/f/mblogonr" method="POST">
+            <fieldset>
+                <legend>Persoonlijke Gegevens</legend>
+                <br>
+                <label for="naam">Naam: </label>
+                <input type="text" name="naam" id="naam">
+                <br>
+                <br>
+                <label for="voorletters">Voorletters: </label>
+                <input type="text" name="voorletters" id="voorletters">
+                <br><br>
+                <label for="geboortedatum">Geboortedatum: </label>
+                <input type="date" name="geboortedatum" id="geboortedatum" max="2050-12-31">
+                <br><br>
+                <label for="straat">Straat en huisnummer: </label>
+                <input type="text" name="straat" id="straat">
+                <br>
+                <br>
+                <label for="postcode">Postcode: </label>
+                <input type="text" name="postcode" id="postcode">
+                <label for="woonplaats">Woonplaats: </label>
+                <input type="text" name="woonplaats" id="woonplaats">
+                <br><br>
+                <label for="telefoonnummer">Telefoonnummer: </label>
+                <input type="tel" name="telefoonnummer" id="telefoonnummer">
+                <br><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+                <br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Beschrijving van de klachten</legend>
+                <p>Selecteer klachten die van toepassing zijn: </p>
+                <input type="checkbox" name="klachten" id="kiespijn" value="Kiespijn">Kiespijn
+                <input type="checkbox" name="klachten" id="kaakpijn" value="Pijn aan kaak"> Pijn aan kaak
+                <input type="checkbox" name="klachten" id="afgebroken" value="afgebroken tand">Afgebroken tand/kies
+                <input type="checkbox" name="klachten" id="verkleuring" value="Verkleuring tand"> Verkleuring tand
+                <input type="checkbox" name="klachten" id="bloeden" value="Bloedend tandvlees">Bloedend tandvlees
+                <input type="checkbox" name="klachten" id="gevoeligheid" value="Gevoelige tanden"> Gevoelige tanden
+                <br>
+                <br>
+                <label for="foto">Upload hier een foto van de klachten (indien mogelijk): </label>
+                <input type="file" name="foto" id="foto" accept="image/*">
+            </fieldset>
+            <fieldset>
+                <legend>Toelichting van de klachten</legend>
+                <label for="toegelichteklachten">Extra toelichting klachten: </label>
+                <textarea name="toegelichteklachten" id="toegelichteklachten" maxlength="1500"></textarea>
+                <br>
+                <br>
+                <label for="datum">Kies hier de dag voor uw afspraak: </label>
+                <input type="date" name="datum" id="datum">
+            </fieldset>
+            <button type="submit" name="verzendknop">Verzend</button>
+
+        </form>
+    </body>
+</html>
